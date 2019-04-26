@@ -376,6 +376,7 @@ fetch("http://localhost:3000/dogs", configObj)
   })
   .catch(function(error) {
     alert("Bad things! Ragnarők!");
+    document.body.innerHTML += `<p>${error}`
     console.log(error.message);
   });
 ```
